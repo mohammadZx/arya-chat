@@ -6,6 +6,8 @@
 	"private": true,
 	"scripts": {
 		"build": "turbo run build",
+		"d": "cd ./apps/meteor && export CREATE_TOKENS_FOR_USERS=true && meteor --port 3030 --exclude-archs 'web.browser.legacy,web.cordova'",
+		"db": "cd ./apps/meteor && meteor mongo",
 		"build:services": "turbo run build --filter=rocketchat-services...",
 		"build:ci": "turbo run build:ci",
 		"testunit": "turbo run testunit",

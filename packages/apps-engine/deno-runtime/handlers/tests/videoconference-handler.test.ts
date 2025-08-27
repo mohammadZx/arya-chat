@@ -1,11 +1,11 @@
 // deno-lint-ignore-file no-explicit-any
-import { assertEquals, assertObjectMatch } from 'https://deno.land/std@0.203.0/assert/mod.ts';
-import { beforeEach, describe, it } from 'https://deno.land/std@0.203.0/testing/bdd.ts';
-import { spy } from 'https://deno.land/std@0.203.0/testing/mock.ts';
+import { assertEquals, assertObjectMatch } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/assert/mod.ts';
+import { beforeEach, describe, it } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/testing/bdd.ts';
+import { spy } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/testing/mock.ts';
 
 import { AppObjectRegistry } from '../../AppObjectRegistry.ts';
 import videoconfHandler from '../videoconference-handler.ts';
-import { assertInstanceOf } from 'https://deno.land/std@0.203.0/assert/assert_instance_of.ts';
+import { assertInstanceOf } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/assert/assert_instance_of.ts';
 import { JsonRpcError } from 'jsonrpc-lite';
 
 describe('handlers > videoconference', () => {

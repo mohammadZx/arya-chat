@@ -1,5 +1,5 @@
-import { assertEquals } from 'https://deno.land/std@0.203.0/assert/mod.ts';
-import { describe, it } from 'https://deno.land/std@0.203.0/testing/bdd.ts';
+import { assertEquals } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/assert/mod.ts';
+import { describe, it } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/testing/bdd.ts';
 import { Logger } from '../logger.ts';
 
 describe('Logger', () => {

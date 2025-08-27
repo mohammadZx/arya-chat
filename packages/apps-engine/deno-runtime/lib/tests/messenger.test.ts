@@ -1,6 +1,6 @@
-import { assertEquals, assertObjectMatch } from 'https://deno.land/std@0.203.0/assert/mod.ts';
-import { afterAll, beforeEach, describe, it } from 'https://deno.land/std@0.203.0/testing/bdd.ts';
-import { spy } from 'https://deno.land/std@0.203.0/testing/mock.ts';
+import { assertEquals, assertObjectMatch } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/assert/mod.ts';
+import { afterAll, beforeEach, describe, it } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/testing/bdd.ts';
+import { spy } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/testing/mock.ts';
 
 import * as Messenger from '../messenger.ts';
 import { AppObjectRegistry } from '../../AppObjectRegistry.ts';

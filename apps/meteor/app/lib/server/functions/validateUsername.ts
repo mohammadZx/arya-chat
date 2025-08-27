@@ -2,7 +2,7 @@ import { settings } from '../../../settings/server';
 
 export const validateUsername = (username: string): boolean => {
 	const settingsRegExp = settings.get('UTF8_User_Names_Validation');
-	const defaultPattern = /^[0-9a-zA-Z-_.]+$/;
+	const defaultPattern = /^.+$/u;
 
 	let usernameRegExp: RegExp;
 	try {

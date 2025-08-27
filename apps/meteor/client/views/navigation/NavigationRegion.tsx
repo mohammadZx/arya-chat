@@ -1,12 +1,13 @@
 import { css } from '@rocket.chat/css-in-js';
 import { Box } from '@rocket.chat/fuselage';
-import { useLayout, useLayoutSizes } from '@rocket.chat/ui-contexts';
+import { useLayout, useLayoutSizes, useRole } from '@rocket.chat/ui-contexts';
 import { memo } from 'react';
 import { FocusScope } from 'react-aria';
 
 import Sidebar from './sidebar';
 import SidePanel from './sidepanel';
 import { NAVIGATION_REGION_ID } from '../../lib/constants';
+
 
 const NavigationRegion = () => {
 	const {
@@ -83,6 +84,8 @@ const NavigationRegion = () => {
 		}
 	`;
 
+
+	const isAdmin = useRole('admin');
 	const showSideBar = !displaySidePanel || !isTablet;
 	const isSidebarOpen = !sidebar.isCollapsed && isTablet;
 	const hideSidePanel = sidebar.overlayed || (sidebar.isCollapsed && isTablet);
@@ -90,7 +93,7 @@ const NavigationRegion = () => {
 	return (
 		<>
 			<Box id={NAVIGATION_REGION_ID} className={[navRegionStyle, isSidebarOpen && 'opened', isTablet && navMobileStyle].filter(Boolean)}>
-				{showSideBar && (
+				{showSideBar && isAdmin && (
 					<Box className={[sidebarWrapStyle, sidebar.overlayed && !isSidebarOpen && 'collapsed hidden-visibility']}>
 						<FocusScope>
 							<Sidebar />

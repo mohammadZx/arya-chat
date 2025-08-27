@@ -1,7 +1,7 @@
 // deno-lint-ignore-file no-explicit-any
-import { afterAll, beforeEach, describe, it } from 'https://deno.land/std@0.203.0/testing/bdd.ts';
-import { assertSpyCall, spy } from 'https://deno.land/std@0.203.0/testing/mock.ts';
-import { assert, assertEquals, assertNotInstanceOf, assertRejects } from 'https://deno.land/std@0.203.0/assert/mod.ts';
+import { afterAll, beforeEach, describe, it } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/testing/bdd.ts';
+import { assertSpyCall, spy } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/testing/mock.ts';
+import { assert, assertEquals, assertNotInstanceOf, assertRejects } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/assert/mod.ts';
 
 import { AppObjectRegistry } from '../../../AppObjectRegistry.ts';
 import { ModifyCreator } from '../modify/ModifyCreator.ts';

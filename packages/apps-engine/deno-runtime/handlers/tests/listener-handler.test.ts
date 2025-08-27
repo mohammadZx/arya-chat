@@ -1,6 +1,6 @@
 // deno-lint-ignore-file no-explicit-any
-import { assertEquals, assertInstanceOf, assertObjectMatch } from 'https://deno.land/std@0.203.0/assert/mod.ts';
-import { describe, it } from 'https://deno.land/std@0.203.0/testing/bdd.ts';
+import { assertEquals, assertInstanceOf, assertObjectMatch } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/assert/mod.ts';
+import { describe, it } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/testing/bdd.ts';
 
 import { parseArgs } from '../listener/handler.ts';
 import { AppAccessors } from '../../lib/accessors/mod.ts';

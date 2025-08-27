@@ -11,7 +11,7 @@ export const useRedirectToSetupWizard = (): void => {
 	const mustRedirect = (!userId && setupWizardState === 'pending') || isWizardInProgress;
 	useEffect(() => {
 		if (mustRedirect) {
-			router.navigate('/setup-wizard');
+		//	router.navigate('/setup-wizard');
 		}
 	}, [mustRedirect, router]);
 };

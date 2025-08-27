@@ -1,4 +1,4 @@
-import { writeAll } from 'https://deno.land/std@0.216.0/io/write_all.ts';
+import { writeAll } from 'https://raw.githubusercontent.com/denoland/deno_std/0.216.0/io/write_all.ts';
 
 import * as jsonrpc from 'jsonrpc-lite';
 

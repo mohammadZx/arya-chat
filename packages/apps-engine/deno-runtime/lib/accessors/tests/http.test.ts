@@ -1,10 +1,10 @@
 // deno-lint-ignore-file no-explicit-any
-import { assertRejects } from 'https://deno.land/std@0.203.0/assert/mod.ts';
-import { beforeEach, describe, it, afterAll } from 'https://deno.land/std@0.203.0/testing/bdd.ts';
+import { assertRejects } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/assert/mod.ts';
+import { beforeEach, describe, it, afterAll } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/testing/bdd.ts';
 
 import { Http } from '../http.ts';
 import { AppObjectRegistry } from '../../../AppObjectRegistry.ts';
-import { stub } from 'https://deno.land/std@0.203.0/testing/mock.ts';
+import { stub } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/testing/mock.ts';
 
 describe('Http accessor error handling integration', () => {
 	let http: Http;

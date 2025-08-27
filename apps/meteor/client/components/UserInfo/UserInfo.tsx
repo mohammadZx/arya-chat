@@ -161,19 +161,6 @@ const UserInfo = ({
 						</InfoPanelField>
 					)}
 
-					{email && (
-						<InfoPanelField>
-							<InfoPanelLabel>{t('Email')}</InfoPanelLabel>
-							<InfoPanelText display='flex' flexDirection='row' alignItems='center'>
-								<Box is='a' withTruncatedText href={`mailto:${email}`}>
-									{email}
-								</Box>
-								<Margins inline={4}>
-									<Tag>{verified ? t('Verified') : t('Not_verified')}</Tag>
-								</Margins>
-							</InfoPanelText>
-						</InfoPanelField>
-					)}
 
 					{userCustomFields?.map(
 						(customField) =>

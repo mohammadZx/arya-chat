@@ -1,5 +1,5 @@
-import { assertEquals, assertThrows } from 'https://deno.land/std@0.203.0/assert/mod.ts';
-import { beforeEach, describe, it } from 'https://deno.land/std@0.203.0/testing/bdd.ts';
+import { assertEquals, assertThrows } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/assert/mod.ts';
+import { beforeEach, describe, it } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/testing/bdd.ts';
 
 import {
 	asyncifyScope,
@@ -34,7 +34,7 @@ import {
 	ReturnStatement,
 	VariableDeclaration,
 } from '../../../acorn.d.ts';
-import { assertNotEquals } from 'https://deno.land/std@0.203.0/assert/assert_not_equals.ts';
+import { assertNotEquals } from 'https://raw.githubusercontent.com/denoland/deno_std/0.203.0/assert/assert_not_equals.ts';
 
 describe('getFunctionIdentifier', () => {
 	it(`identifies the name "foo" for the code \`${FunctionDeclarationFoo.code}\``, () => {

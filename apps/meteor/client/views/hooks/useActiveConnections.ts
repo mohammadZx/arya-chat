@@ -15,3 +15,4 @@ export const useActiveConnections = (): UseQueryResult<{ max: number; current: n
 		staleTime: 1000 * 60,
 	});
 };
+ 
