@@ -10,7 +10,8 @@ export const getValidRoomName = async (displayName: string, rid = '', options: {
 	let slugifiedName = displayName;
 
 	if (settings.get('UI_Allow_room_names_with_special_chars')) {
-		const cleanName = limax(displayName, { maintainCase: true });
+		// const cleanName = limax(displayName, { maintainCase: true });
+		const cleanName = displayName;
 		if (options.allowDuplicates !== true) {
 			const room = await Rooms.findOneByDisplayName(displayName);
 			if (room && room._id !== rid) {
