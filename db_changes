@@ -1,0 +1,28 @@
+layout css
+
+footer.rcx-box.rcx-box--full.rcx-css-c21cfe > p {
+    display: none;
+}
+
+.rcx-box.rcx-box--full.rcx-box--with-block-elements.rcx-box--with-inline-elements.rcx-css-e3nij6 {
+    display: none;
+}
+
+html[dir=rtl] .rcx-option__content {
+    text-align: right;
+}
+
+html[dir=rtl] .rcx-option__input {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.rcx-card__vertical {
+    width: 100%;
+}
+
+html[dir=rtl] .rcx-message-body {
+    text-align: right;
+    margin-top: 5px;
+}
+
+layout homepage

@@ -4,7 +4,7 @@ import { GenericMenu } from '@rocket.chat/ui-client';
 import type { GenericMenuItemProps } from '@rocket.chat/ui-client';
 import { MessageComposerAction, MessageComposerActionsDivider } from '@rocket.chat/ui-composer';
 import type { TranslationKey } from '@rocket.chat/ui-contexts';
-import { useTranslation, useLayoutHiddenActions } from '@rocket.chat/ui-contexts';
+import { useTranslation, useLayoutHiddenActions, useRole } from '@rocket.chat/ui-contexts';
 import type { ComponentProps, MouseEvent } from 'react';
 import { memo } from 'react';
 
@@ -135,11 +135,15 @@ const MessageBoxActionsToolbar = ({
 		return <MessageComposerAction key={id} icon={icon} data-qa-id={id} title={content as string} disabled={disabled} onClick={onClick} />;
 	};
 
+	const isAdmin = useRole('admin');
+
 	return (
 		<>
 			<MessageComposerActionsDivider />
 			{featured.map((action) => action && renderAction(action))}
-			<GenericMenu
+			{
+			isAdmin &&
+			(<GenericMenu
 				disabled={isRecording}
 				data-qa-id='menu-more-actions'
 				detached
@@ -147,6 +151,9 @@ const MessageBoxActionsToolbar = ({
 				sections={[{ title: t('Create_new'), items: createNewFiltered }, { title: t('Share'), items: shareFiltered }, ...messageBoxActions]}
 				title={t('More_actions')}
 			/>
+			)
+			}
+			
 		</>
 	);
 };
