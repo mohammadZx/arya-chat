@@ -24,9 +24,9 @@ export const license =
 			},
 		};
 
-		if (!license) {
-			return c.json(failure.body, failure.statusCode);
-		}
+		// if (!license) {
+		// 	return c.json(failure.body, failure.statusCode);
+		// }
 
 		return next();
 	};

@@ -96,9 +96,9 @@ API.v1.addRoute(
 	{ authRequired: true, license: ['custom-roles'] },
 	{
 		async post() {
-			if (!License.hasModule('custom-roles')) {
-				throw new Meteor.Error('error-action-not-allowed', 'This is an enterprise feature');
-			}
+			// if (!License.hasModule('custom-roles')) {
+			// 	throw new Meteor.Error('error-action-not-allowed', 'This is an enterprise feature');
+			// }
 
 			if (!isRoleCreateProps(this.bodyParams)) {
 				throw new Meteor.Error('error-invalid-role-properties', 'The role properties are invalid.');
@@ -152,9 +152,9 @@ API.v1.addRoute(
 
 			const role = await Roles.findOne(roleId);
 
-			if (!License.hasModule('custom-roles') && !role?.protected) {
-				throw new Meteor.Error('error-action-not-allowed', 'This is an enterprise feature');
-			}
+			// if (!License.hasModule('custom-roles') && !role?.protected) {
+			// 	throw new Meteor.Error('error-action-not-allowed', 'This is an enterprise feature');
+			// }
 
 			const roleData = {
 				description: description || '',

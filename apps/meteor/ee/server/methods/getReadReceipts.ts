@@ -16,9 +16,9 @@ declare module '@rocket.chat/ddp-client' {
 }
 
 export const getReadReceiptsFunction = async function (messageId: IMessage['_id'], userId: string): Promise<ReadReceiptType[]> {
-	if (!License.hasModule('message-read-receipt')) {
-		throw new Meteor.Error('error-action-not-allowed', 'This is an enterprise feature', { method: 'getReadReceipts' });
-	}
+	// if (!License.hasModule('message-read-receipt')) {
+	// 	throw new Meteor.Error('error-action-not-allowed', 'This is an enterprise feature', { method: 'getReadReceipts' });
+	// }
 	check(messageId, String);
 
 	const message = await Messages.findOneById(messageId);
