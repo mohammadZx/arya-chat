@@ -205,7 +205,7 @@ const onCreateUserAsync = async function (options, user = {}) {
 
 	user.status = 'offline';
 	user.active = user.active !== undefined ? user.active : !settings.get('Accounts_ManuallyApproveNewUsers');
-
+	user.language = "fa"
 	if (!user.name) {
 		if (options.profile) {
 			if (options.profile.name) {
