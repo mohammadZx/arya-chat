@@ -7,7 +7,7 @@
 		"scripts": {
 			"build": "turbo run build",
 			"a": "cd ./apps/meteor && export METEOR_ALLOW_SUPERUSER=true && export CREATE_TOKENS_FOR_USERS=true && meteor --port 3030 --exclude-archs 'web.browser.legacy,web.cordova'",
-			"d": "cd ./apps/meteor && export METEOR_ALLOW_SUPERUSER=true && export CREATE_TOKENS_FOR_USERS=true && meteor --exclude-archs 'web.browser.legacy,web.cordova'",
+			"d": "cd ./apps/meteor && export METEOR_ALLOW_SUPERUSER=true && export EXIT_UNHANDLEDPROMISEREJECTION=true && export CREATE_TOKENS_FOR_USERS=true && meteor --exclude-archs 'web.browser.legacy,web.cordova'",
 			"db": "cd ./apps/meteor && export METEOR_ALLOW_SUPERUSER=true && meteor mongo",
 			"start": "cd ./apps/meteor && export METEOR_ALLOW_SUPERUSER=true && meteor mongo",
 			"build:services": "turbo run build --filter=rocketchat-services...",

@@ -8,6 +8,7 @@ import './presenceTroubleshoot';
 import '../hooks';
 import '../lib/rooms/roomTypes';
 import '../lib/settingsRegenerator';
+import './addDefaultUser';
 import { performMigrationProcedure } from './migrations';
 import { isRunningMs } from '../lib/isRunningMs';
 

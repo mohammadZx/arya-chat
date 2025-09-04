@@ -1,6 +1,6 @@
 {
-  "name": "Rocket.Chat.Livechat",
-  "short_name": "Rocket.Chat.Livechat",
+	"name": "پشتیبانی آریا تهران",
+	"short_name": "آریا تهران",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
